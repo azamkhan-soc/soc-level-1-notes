@@ -1,0 +1,124 @@
+# Pyramid of Pain Notes
+
+## Hash Values (Trivial)
+
+What it is:
+Hashes uniquely identify files.
+
+Defender Use:
+Used to identify known malware samples.
+
+Why easy for attackers:
+Changing even one bit changes the hash completely.
+
+Example:
+SHA256 malware hash.
+
+---
+
+## IP Addresses (Easy)
+
+What it is:
+Network addresses used by attackers.
+
+Defender Use:
+Blocking malicious servers and C2 infrastructure.
+
+Why easy for attackers:
+Attackers can rotate VPS servers, VPNs, or cloud hosts.
+
+Example:
+Malicious C2 server IP.
+
+---
+
+## Domain Names (Simple)
+
+What it is:
+Malicious domains used in attacks.
+
+Defender Use:
+Domain blocking and DNS monitoring.
+
+Why easy for attackers:
+Attackers can register new domains quickly.
+
+Example:
+Fake login domains.
+
+---
+
+## Host Artifacts (Annoying)
+
+What it is:
+Artifacts left on infected systems.
+
+Defender Use:
+Endpoint detection and forensic analysis.
+
+Why harder to change:
+Requires malware redesign.
+
+Examples:
+- Registry keys
+- Scheduled tasks
+- File paths
+
+---
+
+## Network Artifacts (Annoying)
+
+What it is:
+Patterns inside network traffic.
+
+Defender Use:
+Detecting suspicious communications.
+
+Why harder to change:
+Changing traffic behavior affects malware operations.
+
+Examples:
+- HTTP headers
+- User-agent strings
+- Beaconing patterns
+
+---
+
+## Tools (Challenging)
+
+What it is:
+Frameworks and malware tools attackers use.
+
+Defender Use:
+Tool detection and signatures.
+
+Why difficult to change:
+Attackers rely heavily on familiar tools.
+
+Examples:
+- Mimikatz
+- Cobalt Strike
+
+---
+
+## TTPs (Tough)
+
+What it is:
+Attacker behaviors and methodologies.
+
+Defender Use:
+Behavior-based detection.
+
+Why hardest to change:
+Changing behavior requires redesigning attack strategy.
+
+Examples:
+- Phishing
+- Credential dumping
+- PowerShell abuse
+
+---
+
+## Key Lesson
+
+The higher the indicator is on the Pyramid of Pain, the harder it is for attackers to change.
